@@ -32,6 +32,6 @@ setuptools.setup(
         "matplotlib==3.5.1",
         "pandas==1.3.5",
         "seaborn==0.11.2",
-        "pyyaml==6.0"        
-    ] #dependencies   
+        "pyyaml==6.0"
+    ]  # dependencies
 )

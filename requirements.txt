@@ -5,4 +5,5 @@ pandas
 seaborn
 PyYAML
 
--e .
+## local package installation
+-e .  ## <<< to install local packages defined in setup.py
