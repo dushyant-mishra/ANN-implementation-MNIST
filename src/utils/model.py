@@ -1,4 +1,4 @@
-from datetime import time
+import time
 import os
 
 import tensorflow as tf
@@ -20,7 +20,7 @@ def create_model(loss_function, optimizer, metrics, num_classes, input_shape):
 
 
 def get_unique_filename(filename):
-    unique_filename = time.strftime(f"%Y-%m-%d_%H-%M-%S_{filename}")
+    unique_filename = time.strftime(f"%Y%m%d-%H%M%S_{filename}")
     return unique_filename
 
 
