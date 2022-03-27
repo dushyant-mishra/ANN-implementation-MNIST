@@ -5,6 +5,7 @@ import tensorflow as tf
 from matplotlib import pyplot as plt
 
 
+
 def create_model(loss_function, optimizer, metrics, num_classes, input_shape):
     layers = [tf.keras.layers.Flatten(input_shape=input_shape, name="inputLayer"),
               tf.keras.layers.Dense(300, activation="relu", name="hiddenLayer1"),
@@ -43,3 +44,13 @@ def save_plot(history, plot_name, plot_dir):
 
     plt.show()   #this should be called after saving the plot
     #plot_name.save(path_to_plot)
+
+
+# def get_log_path(log_dir="logs/fit"):
+#     uniqueName = time.strftime("log_%Y_%m_%d_H_%M_%S")
+#     log_path = os.path.join(log_dir, uniqueName)
+#     print(f"saving logs at: {log_path}")
+
+#     return log_path
+
+# log_dir = get_log_path()
